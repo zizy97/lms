@@ -5,7 +5,11 @@ export const Navbar = styled.ul`
     margin:0;
     padding:0;
     overflow:hidden;
-    background-color:#333;
+    background-color: ${(props)=>props.theme.primary.main};
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1;
 `;
 
 export const NavItem = styled.li`
@@ -14,16 +18,16 @@ export const NavItem = styled.li`
 
 export const NavLink = styled.a`
     display:block;
-    color:white;
+    color:${(props)=>props.theme.primary.textColor};
     text-align:center;
     padding: 10px 16px;
     text-decoration:none;
 
     :hover {
-        background-color:green;
+        background-color:${(props)=>props.theme.primary.light};
     }
 
     .active {
-        background-color:blue;
+        background-color:${(props)=>props.theme.primary.dark};
     }
 `;
