@@ -1,22 +1,13 @@
-import styled from "styled-components";
+import { Header,Main,Footer } from './components/Layout.js'
 
-const Title = styled.h1`
-  font-size:3em;
-  text-align:center;
-  color:palevioletred
-`;
-
-const Wrapper = styled.section`
-  padding:4em;
-  background:papayawhip;
-`;
 
 function App() {
   return (
-    <Wrapper>
-      <Title style={{textAlign:"center"}}>LMS</Title>
-    </Wrapper>
-    
+    <>
+      <Header>This is Header</Header>
+      <Main>This is main</Main>
+      <Footer>this is Footer</Footer>
+    </>
   );
 }
 
