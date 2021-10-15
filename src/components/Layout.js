@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
-export const Header = styled.header`
-    height: 5vh;
-`;
+
 export const Main = styled.main`
+    min-height:100vh;
     height: 95vh;
 `;
 export const Footer = styled.footer`

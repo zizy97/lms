@@ -1,6 +1,7 @@
 // third party imports
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
+import { BsBookHalf } from 'react-icons/bs'
 
 //in app imports
 import { Navbar,NavItem,NavLink } from './components/Navbar'
@@ -22,8 +23,12 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Header>
-        <Navbar>
+      <Navbar>
+            <NavItem> 
+                <NavLink href="#">
+                  <BsBookHalf/>
+                </NavLink>
+            </NavItem>
             <NavItem> 
                 <NavLink href="#">Catalog</NavLink>
             </NavItem>
@@ -31,7 +36,6 @@ function App() {
                 <NavLink href="#">DashBoard</NavLink>
             </NavItem>
         </Navbar>
-      </Header>
       <Main>This is main</Main>
       <Footer>this is Footer</Footer>
     </ThemeProvider>
