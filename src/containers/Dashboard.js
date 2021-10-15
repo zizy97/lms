@@ -1,4 +1,3 @@
-
 import Tabs from "../components/Tabs"
 import {  } from "../components/Tabs"
 
@@ -9,6 +8,8 @@ export const DashBoard = () =>{
     ]
 
     return(
-        <Tabs contents={contents}/>
+        <>
+            <Tabs contents={contents}/>
+        </>
     )
 }
