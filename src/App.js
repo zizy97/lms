@@ -32,19 +32,21 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Navbar>
-            <NavItem> 
-                <NavLink href="#">
-                  <BsBookHalf/>
-                </NavLink>
-            </NavItem>
-            <NavItem> 
-                <NavLink href="#">Catalog</NavLink>
-            </NavItem>
-            <NavItem >
-                <NavLink href="#">DashBoard</NavLink>
-            </NavItem>
-        </Navbar>
+      <Header>
+        <Navbar>
+              <NavItem> 
+                  <NavLink href="#">
+                    <BsBookHalf/>
+                  </NavLink>
+              </NavItem>
+              <NavItem> 
+                  <NavLink href="#">Catalog</NavLink>
+              </NavItem>
+              <NavItem >
+                  <NavLink href="#">DashBoard</NavLink>
+              </NavItem>
+          </Navbar>
+      </Header>
       <Main>
         <DashBoard/>
       </Main>
