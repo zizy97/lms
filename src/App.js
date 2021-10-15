@@ -3,23 +3,32 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { BsBookHalf } from 'react-icons/bs'
 
-//in app imports
+//in app imports-presentational
 import { Navbar,NavItem,NavLink } from './components/Navbar'
 import { Header,Main,Footer } from './components/Layout'
 
+//in app imports-logical
+import { DashBoard } from './containers/Dashboard';
+
 function App() {
   const theme = {
-    primary:{
-      main: "#29b6f6",
-      light:"green",
-      dark:"blue",
-      textColor:"#000"
+    primary: {
+       main: "#29b6f6",
+       light: "#73e8ff",
+       dark: "#0086c3",
+       textColor: "#000",
+       danger : "#e91e63",
+       dangerDark : "#b0003a"
     },
-    secondary:{
-      main: "#fff",
+    secondary: {
+       main : "#9e9e9e",
+       light : "#cfcfcf",
+       dark : "#707070",
+       textColor : "#000" 
 
-    }
-  };
+    },
+    spacing: (factor) => `${factor * 8}px`,
+ };
 
   return (
     <ThemeProvider theme={theme}>
@@ -36,8 +45,12 @@ function App() {
                 <NavLink href="#">DashBoard</NavLink>
             </NavItem>
         </Navbar>
-      <Main>This is main</Main>
-      <Footer>this is Footer</Footer>
+      <Main>
+        <DashBoard/>
+      </Main>
+      <Footer>
+        Copyright {new Date().getFullYear()} &#169; Spark Academy
+      </Footer>
     </ThemeProvider>
   );
 }
