@@ -4,8 +4,8 @@ import { ThemeProvider } from 'styled-components';
 import { BsBookHalf } from 'react-icons/bs'
 
 //in app imports-presentational
-import { Header,Navbar,NavItem,NavLink } from './components/Navbar'
-import { Main,Footer } from './components/Layout'
+import { Navbar,NavItem,NavLink } from './components/Navbar'
+import { Header, Main, Footer } from './components/Layout'
 
 //in app imports-logical
 import { DashBoard } from './containers/Dashboard';
