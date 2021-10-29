@@ -18,7 +18,7 @@ import {
    returnBook,
    deleteBook,
 } from "../../../api/bookAPI";
-import BookCoverPlaceholder from "../../../shared/book_image.png";
+import BookCoverPlaceholder from "../../../shared/book_image.jpg";
 import { getTodayDate } from "../../../shared/utils";
 
 const CotainerInlineTextAlignLeft = styled(ContainerInline)`
