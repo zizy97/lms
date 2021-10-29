@@ -15,7 +15,7 @@ import { DASHBOARD, CATALOG } from "./shared/routes";
  
 
 const DashBoard = React.lazy(() => {
-  return import("./containers/Dashboard");
+  return import("./containers/Dashboard/index");
 });
 
 const NotFound = React.lazy(()=>{
