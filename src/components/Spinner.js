@@ -19,16 +19,17 @@ const SpinningDiv = styled.div`
 
 const SpinnerContainer = styled.div`
     display: flex;
+    flex-direction:column;
     justify-content: center;
     align-items: flex-start;
 `;
 
 const Spinner = () => {
-    return (
-        <SpinnerContainer>
-            <SpinningDiv />
-        </SpinnerContainer>
-    );
+return (
+    <SpinnerContainer>
+        <SpinningDiv />
+    </SpinnerContainer>
+);
 };
 
 export default Spinner;
